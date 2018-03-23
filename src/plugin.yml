@@ -1,0 +1,34 @@
+name: EasyBroadcast
+version: 0.4
+author: Jaldaba0th
+    
+main: easybroadcast.EasyBroadcast 
+
+permissions:
+  easybroadcast.*:
+    description: All Permissions!
+    children:
+      easybroadcast.manage: true
+      easybroadcast.broadcast: true
+        
+commands:
+  ebc:
+    description: Display all commands
+    usage: '§c> Usage: §a/easybroadcast §7(§a/ebc§7)'
+    permission: easybroadcast.manage
+    permission-message: '§c> Unknown command'
+  easybroadcast:
+    description: Display all commands 
+    usage: '§c> Usage: §a/easybroadcast §7(§a/ebc§7)'
+    permission: easybroadcast.manage
+    permission-message: '§c> Unknown command'
+  bc:
+    description: broadcasts a message in all worlds
+    usage: '§c> Usage: §a/broadcast §7(§a/bc§7) <§amessage§7>'
+    permission: easybroadcast.broadcast
+    permission-message: '§c> Unknown command'
+  broadcast:
+    description: broadcasts a message in all worlds
+    usage: '§c> Usage: §a/broadcast §7(§a/bc§7) <§amessage§7>'
+    permission: easybroadcast.broadcast
+    permission-message: '§c> Unknown command'
